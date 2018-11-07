@@ -1,0 +1,14 @@
+﻿生成启动时间为 2018/10/14 19:11:50。
+     1>项目“D:\VS代码\顺序表删除\顺序表删除\顺序表删除.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
+         test.c
+     1>d:\vs代码\顺序表删除\顺序表删除\test.c(106): warning C4101: “x”: 未引用的局部变量
+     1>d:\vs代码\顺序表删除\顺序表删除\test.c(106): warning C4101: “key”: 未引用的局部变量
+     1>d:\vs代码\顺序表删除\顺序表删除\test.c(106): warning C4101: “len”: 未引用的局部变量
+     1>d:\vs代码\顺序表删除\顺序表删除\test.c(127): error C4703: 使用了可能未初始化的本地指针变量“L”
+     1>已完成生成项目“D:\VS代码\顺序表删除\顺序表删除\顺序表删除.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.62
