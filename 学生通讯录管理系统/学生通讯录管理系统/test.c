@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 1
 #include"Contact.h"
 void menu()
 {
@@ -11,7 +12,7 @@ void menu()
 }
 void test()
 {
-	int input = 0; 
+	int input = 0;
 	Contact con;//通讯录
 	InitContact(&con);//初始化通讯录
 	do
@@ -42,6 +43,8 @@ void test()
 		case EXIT:
 			printf("退出通讯录\n");
 			break;
+		case SORT:
+			SortContact(&con);
 		default:
 			printf("选择错误\n");
 			break;

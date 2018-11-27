@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 1
 #include"Contact.h"
 void InitContact(Contact* pcon)
 {
@@ -34,11 +35,11 @@ void ShowContact(const Contact*pcon)
 {
 	int i = 0;
 	assert(pcon != NULL);
-	printf("%-15s\t%-5s\t%-5s\t%-12s\t%-20s\n", "名字","年龄", "性别", "电话", "地址");
+	printf("%-15s\t%-5s\t%-5s\t%-12s\t%-20s\n", "名字", "年龄", "性别", "电话", "地址");
 	for (i = 0; i < pcon->sz; i++)
 	{
 		printf("%-15s\t%-5d\t%-5s\t%-12s\t%-20s\n"
-			,pcon->data[i].name,
+			, pcon->data[i].name,
 			pcon->data[i].age,
 			pcon->data[i].sex,
 			pcon->data[i].tele,
@@ -80,7 +81,7 @@ void DelContact(Contact* pcon)
 		{
 			//删除
 			int i = 0;
-			for (i = pos; i < pcon->sz-1; i++)
+			for (i = pos; i < pcon->sz - 1; i++)
 			{
 				pcon->data[i] = pcon->data[i + 1];
 			}
@@ -89,7 +90,7 @@ void DelContact(Contact* pcon)
 		}
 	}
 }
-void SearchContact(const Contact* pcon)
+void SearchContact( Contact* pcon)
 {
 	char name[MAX_NAME] = { 0 };
 	int pos = 0;
@@ -121,7 +122,7 @@ void SearchContact(const Contact* pcon)
 					pcon->data[i].addr);
 
 			}
-			
+
 		}
 	}
 }
@@ -153,11 +154,48 @@ void ModifyContact(Contact* pcon)
 				pcon->data[tmp].age,
 				pcon->data[tmp].sex,
 				pcon->data[tmp].tele,
-				pcon->data[tmp].addr));
-				printf("修改成功");
+				pcon->data[tmp].addr);
+			printf("修改成功");
 
 		}
 	}
-	
+
+}
+void EmptyContact(Contact *pcon)
+{
+	int i = 0;
+	for (i = 0; i < pcon->sz - 1; i++)
+	{
+		memset(pcon->data[i].name, 0, sizeof(pcon->data[0]));
+		memset(pcon->data[i].age, 0, sizeof(pcon->data[0]));
+		memset(pcon->data[i].sex, 0, sizeof(pcon->data[0]));
+		memset(pcon->data[i].tele, 0, sizeof(pcon->data[0]));
+		memset(pcon->data[i].addr, 0, sizeof(pcon->data[0]));
+	}
+	printf("清空成功");
+}
+void sortcontact(Contact* pcon)  //以名字排序联系人
+{
+	int flag = 0;
+	int i = 0;
+	int j = 0;
+	for (i = 0; i<pcon->sz - 1; i++)
+	{
+		flag = 0;
+		for (j = 0; j<pcon->sz - 1 - i; j++)
+		{
+			if (strcmp(pcon->data[j].name, pcon->data[j + 1].name) > 0)
+			{
+				PeoInfo tmp = pcon->data[j];
+				pcon->data[j] = pcon->data[j + 1];
+				pcon->data[j + 1] = tmp;
+				flag = 1;
+			}
+		}
+		if (flag == 0)
+
+			break;
+
+	}
 }
 

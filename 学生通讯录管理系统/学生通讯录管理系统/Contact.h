@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS 1
 
 #ifndef __CONTACT_H__
 #define __CONTACT_H__
@@ -45,4 +46,5 @@ void DelContact(Contact* pcon);
 void SearchContact(const Contact*pcon);
 void ModifyContact(Contact*pcon);
 void EmptyContact(Contact *pcon);
+void SortContact(Contact *pcon);
 #endif //_CONTACT_H__
