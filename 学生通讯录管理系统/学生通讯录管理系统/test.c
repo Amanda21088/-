@@ -41,6 +41,7 @@ void test()
 			EmptyContact(&con);
 			break;
 		case EXIT:
+			DestoryContact(&con);
 			printf("�˳�ͨѶ¼\n");
 			break;
 		case SORT:

@@ -1,18 +1,50 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#define _CRT_SECURE_NO_WARNINGS 1
 #include"Contact.h"
 void InitContact(Contact* pcon)
 {
 	pcon->sz = 0;
 	assert(pcon != NULL);
-	memset(pcon->data, 0, sizeof(pcon->data));
+	pcon->sz = 0;
+	pcon->capacity = DEFAULT_SIZE;
+	pcon->data = (PeoInfo*)malloc(pcon->capacity*sizeof(PeoInfo));
+	memset(pcon->data, 0, pcon->capacity*sizeof(PeoInfo));
+}
+void DestoryContact(Contact* pcon)
+{
+	assert(pcon);
+	free(pcon->data);
+	pcon->data = NULL;
+	pcon->sz = 0;
+	pcon->capacity = 0;
+}
+//增容函数
+int CheckCapacity(Contact* pcon)
+{
+	assert(pcon);
+	if (pcon->sz == pcon->capacity)
+	{
+		PeoInfo *ptr = realloc(pcon->data,(pcon->capacity+2)*sizeof(PeoInfo*));
+		if (ptr != NULL)
+		{
+			pcon->data = ptr;
+			pcon->capacity += 2;
+			return 1;
+		}
+		else
+		{
+
+			return 0;
+		}
+	}
+	return 1;
 }
 void AddContact(Contact* pcon)
 {
 	assert(pcon != NULL);
-	if (pcon->sz == MAX)
+	if (CheckCapacity(pcon) == 0)
 	{
-		printf("通讯录已满，无法添加\n");
+		printf("增容失败");
+		return;
 	}
 	else
 	{
@@ -174,7 +206,7 @@ void EmptyContact(Contact *pcon)
 	}
 	printf("清空成功");
 }
-void sortcontact(Contact* pcon)  //以名字排序联系人
+void Sortcontact(Contact* pcon)  //以名字排序联系人
 {
 	int flag = 0;
 	int i = 0;

@@ -1,4 +1,4 @@
-﻿生成启动时间为 2018/11/27 12:27:22。
+﻿生成启动时间为 2018/11/27 12:30:37。
      1>项目“D:\VS代码\学生通讯录管理系统\学生通讯录管理系统\学生通讯录管理系统.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Contact.c
