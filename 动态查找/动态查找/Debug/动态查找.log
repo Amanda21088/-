@@ -1,0 +1,20 @@
+﻿生成启动时间为 2018/12/13 13:29:08。
+     1>项目“D:\VS代码\动态查找\动态查找\动态查找.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
+         test.c
+     1>d:\vs代码\动态查找\动态查找\test.c(19): error C2061: 语法错误: 标识符“SearchBST”
+     1>d:\vs代码\动态查找\动态查找\test.c(19): error C2059: 语法错误:“;”
+     1>d:\vs代码\动态查找\动态查找\test.c(19): error C2059: 语法错误:“类型”
+     1>d:\vs代码\动态查找\动态查找\test.c(38): error C2143: 语法错误 : 缺少“)”(在“&”的前面)
+     1>d:\vs代码\动态查找\动态查找\test.c(38): error C2143: 语法错误 : 缺少“{”(在“&”的前面)
+     1>d:\vs代码\动态查找\动态查找\test.c(38): error C2059: 语法错误:“&”
+     1>d:\vs代码\动态查找\动态查找\test.c(38): error C2059: 语法错误:“)”
+     1>d:\vs代码\动态查找\动态查找\test.c(84): warning C4013: “CreatBST”未定义；假设外部返回 int
+     1>d:\vs代码\动态查找\动态查找\test.c(86): warning C4013: “SearchBST”未定义；假设外部返回 int
+     1>d:\vs代码\动态查找\动态查找\test.c(86): error C2065: “q”: 未声明的标识符
+     1>已完成生成项目“D:\VS代码\动态查找\动态查找\动态查找.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.27
