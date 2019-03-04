@@ -1,0 +1,13 @@
+﻿生成启动时间为 2019/1/16 15:09:55。
+     1>项目“D:\VS代码\类和对象\类和对象\类和对象.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Test.cpp
+         Test.cpp
+       Link:
+         D:\VS\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS代码\类和对象\Debug\类和对象.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\VS代码\类和对象\Debug\类和对象.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS代码\类和对象\Debug\类和对象.lib" /MACHINE:X86 Debug\Test.obj
+         类和对象.vcxproj -> D:\VS代码\类和对象\Debug\类和对象.exe
+     1>已完成生成项目“D:\VS代码\类和对象\类和对象\类和对象.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.63
