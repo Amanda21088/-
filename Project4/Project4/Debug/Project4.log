@@ -1,0 +1,40 @@
+﻿生成启动时间为 2018/12/16 18:36:22。
+     1>项目“D:\VS代码\Project4\Project4\Project4.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
+         test.c
+     1>d:\vs代码\project4\project4\test.c(12): error C2146: 语法错误: 缺少“)”(在标识符“L”的前面)
+     1>d:\vs代码\project4\project4\test.c(12): error C2061: 语法错误: 标识符“L”
+     1>d:\vs代码\project4\project4\test.c(12): error C2059: 语法错误:“;”
+     1>d:\vs代码\project4\project4\test.c(12): error C2059: 语法错误:“)”
+     1>d:\vs代码\project4\project4\test.c(13): error C2146: 语法错误: 缺少“)”(在标识符“L”的前面)
+     1>d:\vs代码\project4\project4\test.c(13): error C2061: 语法错误: 标识符“L”
+     1>d:\vs代码\project4\project4\test.c(13): error C2059: 语法错误:“;”
+     1>d:\vs代码\project4\project4\test.c(13): error C2059: 语法错误:“)”
+     1>d:\vs代码\project4\project4\test.c(14): error C2146: 语法错误: 缺少“)”(在标识符“L”的前面)
+     1>d:\vs代码\project4\project4\test.c(14): error C2061: 语法错误: 标识符“L”
+     1>d:\vs代码\project4\project4\test.c(14): error C2059: 语法错误:“;”
+     1>d:\vs代码\project4\project4\test.c(14): error C2059: 语法错误:“)”
+     1>d:\vs代码\project4\project4\test.c(34): warning C4013: “inster”未定义；假设外部返回 int
+     1>d:\vs代码\project4\project4\test.c(35): warning C4013: “bubble”未定义；假设外部返回 int
+     1>d:\vs代码\project4\project4\test.c(36): warning C4013: “select”未定义；假设外部返回 int
+     1>d:\vs代码\project4\project4\test.c(46): error C2146: 语法错误: 缺少“)”(在标识符“L”的前面)
+     1>d:\vs代码\project4\project4\test.c(46): error C2061: 语法错误: 标识符“L”
+     1>d:\vs代码\project4\project4\test.c(46): error C2059: 语法错误:“;”
+     1>d:\vs代码\project4\project4\test.c(46): error C2059: 语法错误:“)”
+     1>d:\vs代码\project4\project4\test.c(47): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+     1>d:\vs代码\project4\project4\test.c(63): error C2059: 语法错误:“}”
+     1>d:\vs代码\project4\project4\test.c(88): error C2146: 语法错误: 缺少“)”(在标识符“L”的前面)
+     1>d:\vs代码\project4\project4\test.c(88): error C2061: 语法错误: 标识符“L”
+     1>d:\vs代码\project4\project4\test.c(88): error C2059: 语法错误:“;”
+     1>d:\vs代码\project4\project4\test.c(88): error C2059: 语法错误:“)”
+     1>d:\vs代码\project4\project4\test.c(89): error C2449: 在文件范围内找到“{”(是否缺少函数头?)
+     1>d:\vs代码\project4\project4\test.c(100): error C2059: 语法错误:“}”
+     1>d:\vs代码\project4\project4\test.c(116): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\vs代码\project4\project4\test.c(117): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\vs代码\project4\project4\test.c(119): warning C4013: “swapInt”未定义；假设外部返回 int
+     1>已完成生成项目“D:\VS代码\Project4\Project4\Project4.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.66
